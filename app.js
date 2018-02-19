@@ -9,7 +9,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'pug');
 
 var bot = require('./lib/bot');
-app.post('/api/messages', bot.listen());
+var builder = require('botbuilder');
+
+var connector = new builder.ChatConnector({
+  appId: process.env.MICROSOFT_APP_ID,
+  appPassword: process.env.MICROSOFT_APP_PASSWORD
+});
+
+var bot = bot.botConstructor(connector);
+
+app.post('/api/messages', connector.listen());
 
 // Error handlers
 
