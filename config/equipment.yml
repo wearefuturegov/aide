@@ -1,0 +1,24 @@
+bathroom:
+  message: "OK, I've found some information on equipment that can help you in the bathroom on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bathroom"
+bedroom:
+  message: "OK, I've found some information on equipment that can help you in the bedroom on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bedroom"
+diningroom:
+  message: "OK, I've found some information on equipment that can help you in the dining room on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/DiningRoom"
+garden:
+  message: "OK, I've found some information on equipment that can help you in the garden on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Garden"
+office:
+  message: "OK, I've found some information on equipment that can help you in the office on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Office"
+kitchen:
+  message: "OK, I've found some information on equipment that can help you in the kitchen on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Kitchen"
+lounge:
+  message: "OK, I've found some information on equipment that can help you in the lounge on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Lounge"
+stairs:
+  message: "OK, I've found some information on equipment that can help you on the stairs on the My Equipment Newcastle website"
+  link: "https://www.myequipmentnewcastle.org.uk/catalogue/Stairs"
