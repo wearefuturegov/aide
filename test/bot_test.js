@@ -22,7 +22,7 @@ describe('bot', function() {
     it('Points me to equipment', function() {
       return botTester
         .sendMessageToBot(
-          'Need help getting on the toilet',
+          'Equipment',
           'OK, I can see you need help with an equipment request, is that right?'
         )
         .sendMessageToBot(
@@ -104,30 +104,103 @@ describe('bot', function() {
             .runTest();
         })
         
-        it('shows me some equipment', function() {
+        it('asks me what kind of help I need', function() {
           return botTester
             .sendMessageToBot(
               'Yes',
-              'I found some equipment I think might help with issues of mobility around using the toilet. Please have a look below.'
+              'What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?'
             )
             .runTest();
         })
         
         describe('step3', function() {
+          this.timeout(15000);
           
           beforeEach(function() {
             botTester
               .sendMessageToBot(
                 'Yes',
-                'I found some equipment I think might help with issues of mobility around using the toilet. Please have a look below.'
+                'What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?'
               )
           });
           
-          it('forwards me to paying for care', function() {
+          it('Gives me a link to help in the bathroom', function() {
             return botTester
               .sendMessageToBot(
-                'Yes',
-                'Here is some information that can help you learn more about paying for care:'
+                'Getting on the toilet',
+                'OK, I\'ve found some information on equipment that can help you in the bathroom on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help in the bedroom', function() {
+            return botTester
+              .sendMessageToBot(
+                'Getting out of bed',
+                'OK, I\'ve found some information on equipment that can help you in the bedroom on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help in the dining room', function() {
+            return botTester
+              .sendMessageToBot(
+                'Eating my dinner',
+                'OK, I\'ve found some information on equipment that can help you in the dining room on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help in the garden', function() {
+            return botTester
+              .sendMessageToBot(
+                'mowing the lawn',
+                'OK, I\'ve found some information on equipment that can help you in the garden on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help in the office', function() {
+            return botTester
+              .sendMessageToBot(
+                'reading and writing',
+                'OK, I\'ve found some information on equipment that can help you in the office on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help in the kitchen', function() {
+            return botTester
+              .sendMessageToBot(
+                'cooking my dinner',
+                'OK, I\'ve found some information on equipment that can help you in the kitchen on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help in the lounge', function() {
+            return botTester
+              .sendMessageToBot(
+                'getting out of my chair',
+                'OK, I\'ve found some information on equipment that can help you in the lounge on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('Gives me a link to help on the stairs', function() {
+            return botTester
+              .sendMessageToBot(
+                'getting up the stairs',
+                'OK, I\'ve found some information on equipment that can help you on the stairs on the My Equipment Newcastle website'
+              )
+              .runTest();
+          })
+          
+          it('tells me it cannot understand', function() {
+            return botTester
+              .sendMessageToBot(
+                'going waterskiing',
+                'Sorry, I did not understand \'going waterskiing\'. Could you maybe rephrase?'
               )
               .runTest();
           })
