@@ -1,0 +1,59 @@
+end_conversation: No problem, have a great day
+rephrase: Sorry to hear that. I'm still learning. Could you maybe try rephrasing your request?
+
+intro:
+  line_1: Hello, I am your Newcastle City Council Social Care Direct virtual assistant
+  line_2: I can currently help with equipment requests and how to pay for care
+  line_3: How can I help you today?
+  confirm:
+    equipment: OK, I can see you need help with an equipment request, is that right?
+    paying: OK, I can see you need help with paying for care, is that right?
+
+equipment:
+  for_you: Is this for you or someone else?
+  you_live_in_newcastle: Do you live in Newcastle?
+  someone_else_live_in_newcastle: Does the person live in Newcastle?
+  kind_of_help: What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?
+  external_council: I am only able to advise residents of Newcastle because all my advice is local to the area. You can find your local council at https://www.gov.uk/find-local-council
+  what_you_were_looking_for: Was that what you were looking for?
+  move_to_payment: Great! Glad I could help. Are you interested in finding out more about paying for this equipment?
+  anything_else: OK. Is there anything else I can help you with?
+  bathroom:
+    message: "OK, I've found some information on equipment that can help you in the bathroom on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bathroom"
+  bedroom:
+    message: "OK, I've found some information on equipment that can help you in the bedroom on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bedroom"
+  diningroom:
+    message: "OK, I've found some information on equipment that can help you in the dining room on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/DiningRoom"
+  garden:
+    message: "OK, I've found some information on equipment that can help you in the garden on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Garden"
+  office:
+    message: "OK, I've found some information on equipment that can help you in the office on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Office"
+  kitchen:
+    message: "OK, I've found some information on equipment that can help you in the kitchen on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Kitchen"
+  lounge:
+    message: "OK, I've found some information on equipment that can help you in the lounge on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Lounge"
+  stairs:
+    message: "OK, I've found some information on equipment that can help you on the stairs on the My Equipment Newcastle website"
+    link: "https://www.myequipmentnewcastle.org.uk/catalogue/Stairs"
+
+payingforcare:
+  info_1: "Here is some information that can help you learn more about paying for care:"
+  info_2: https://www.informationnow.org.uk/article/paying-for-care/
+  info_3: You can also get a financial assessment completed by the council to check if you are eligible for financial support.
+  start_assessment: Would you like to start an assessment?
+
+assessment:
+  intro: Great! We need to collect a few pieces of information so that we can pass it onto the Social Care Direct team to followup on your request for assessing payment support available to you.
+  first_name: What is your first name?
+  surname: What is your surname?
+  phone_number: Phone number we can use to contact you?
+  info: Thank you. Here's the information you've provided
+  confirm: Just to confirm, is this information correct?
+  thank_you: Thank you for answering my questions. I have now passed them to the Social Care Direct team.

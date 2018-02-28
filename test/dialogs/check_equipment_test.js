@@ -1,5 +1,6 @@
 var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
+var t = require('../../lib/config')
 
 describe('equipment', function() {
   let bot;
@@ -21,7 +22,7 @@ describe('equipment', function() {
       botTester
         .sendMessageToBot(
           'yes',
-          'Was that helpful?'
+          t.equipment.what_you_were_looking_for
         )
     });
     
@@ -31,7 +32,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?'
+            t.equipment.move_to_payment
           )
           .runTest();
       })
@@ -44,7 +45,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'Sorry to hear that. I\'m still learning. Could you maybe try rephrasing your question?'
+            t.rephrase
           )
           .runTest();
       })
@@ -59,11 +60,11 @@ describe('equipment', function() {
       botTester
         .sendMessageToBot(
           'yes',
-          'Was that helpful?'
+          t.equipment.what_you_were_looking_for
         )
         .sendMessageToBot(
           'yes',
-          'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?'
+          t.equipment.move_to_payment
         )
     });
     
@@ -86,7 +87,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'OK. Is there anything else I can help you with?'
+            t.equipment.anything_else
           )
           .runTest();
       })
@@ -101,11 +102,11 @@ describe('equipment', function() {
       botTester
         .sendMessageToBot(
           'yes',
-          'Was that helpful?'
+          t.equipment.what_you_were_looking_for
         )
         .sendMessageToBot(
           'yes',
-          'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?'
+          t.equipment.move_to_payment
         )
         .sendMessageToBot(
           'no',
@@ -132,7 +133,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'No problem, hope you found me useful'
+            t.end_conversation
           )
           .runTest();
       })

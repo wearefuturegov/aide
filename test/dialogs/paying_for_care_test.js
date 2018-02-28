@@ -1,5 +1,6 @@
 var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
+var t = require('../../lib/config')
 
 describe('intro', function() {
   let bot;
@@ -18,9 +19,9 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'hello',
-        'Here is some information that can help you learn more about paying for care:',
-        'https://www.informationnow.org.uk/article/paying-for-care/',
-        'You can also get a financial assessment completed by the council to check if you are eligible for financial support.'
+        t.payingforcare.info_1,
+        t.payingforcare.info_2,
+        t.payingforcare.info_3
       )
       .runTest();
   })
@@ -31,7 +32,7 @@ describe('intro', function() {
       botTester
         .sendMessageToBot(
           'hello',
-          'Here is some information that can help you learn more about paying for care:'
+          t.payingforcare.info_1
         )
     })
     
@@ -41,8 +42,8 @@ describe('intro', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'Great! We need to collect a few pieces of information so that we can pass it onto the Social Care Direct team to followup on your request for assessing payment support available to you.',
-            'What is your first name?'
+            t.assessment.intro,
+            t.assessment.first_name
           ).runTest();
       })
       
@@ -54,7 +55,7 @@ describe('intro', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'OK, have a great day'
+            t.end_conversation
           ).runTest();
       })
       

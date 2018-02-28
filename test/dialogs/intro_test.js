@@ -1,5 +1,6 @@
 var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
+var t = require('../../lib/config')
 
 describe('intro', function() {
   let bot;
@@ -20,11 +21,11 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'Equipment',
-        'OK, I can see you need help with an equipment request, is that right?'
+        t.intro.confirm.equipment
       )
       .sendMessageToBot(
         'yes',
-        'Is this for you or someone else?'
+        t.equipment.for_you
       )
       .runTest();
   });
@@ -33,11 +34,11 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'Help me pay for care',
-        'OK, I can see you need help with paying for care, is that right?'
+        t.intro.confirm.paying
       )
       .sendMessageToBot(
         'yes',
-        'Here is some information that can help you learn more about paying for care:'
+        t.payingforcare.info_1
       )
       .runTest();
   });

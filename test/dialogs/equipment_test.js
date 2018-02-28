@@ -1,5 +1,6 @@
 var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
+var t = require('../../lib/config')
 
 describe('equipment', function() {
   let bot;
@@ -18,7 +19,7 @@ describe('equipment', function() {
     return botTester
       .sendMessageToBot(
         'Yes',
-        'Is this for you or someone else?'
+        t.equipment.for_you
       ).runTest();
   })
   
@@ -27,7 +28,7 @@ describe('equipment', function() {
     beforeEach(function() {
       botTester.sendMessageToBot(
         'Yes',
-        'Is this for you or someone else?'
+        t.equipment.for_you
       )
     })
     
@@ -35,7 +36,7 @@ describe('equipment', function() {
       return botTester
         .sendMessageToBot(
           'Me',
-          'Do you live in Newcastle?'
+          t.equipment.you_live_in_newcastle
         ).runTest();
     })
     
@@ -43,7 +44,7 @@ describe('equipment', function() {
       return botTester
         .sendMessageToBot(
           'Someone else',
-          'Does the person live in Newcastle?'
+          t.equipment.someone_else_live_in_newcastle
         ).runTest();
     })
     
@@ -54,11 +55,11 @@ describe('equipment', function() {
     beforeEach(function() {
       botTester.sendMessageToBot(
         'Yes',
-        'Is this for you or someone else?'
+        t.equipment.for_you
       )
       .sendMessageToBot(
         'Me',
-        'Do you live in Newcastle?'
+        t.equipment.you_live_in_newcastle
       )
     })
     
@@ -68,7 +69,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?'
+            t.equipment.kind_of_help
           ).runTest();
       })
       
@@ -80,7 +81,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'I am only able to advise residents of Newcastle because all my advice is local to the area. Please contact you local authority or local resources for information that could help you in your area.'
+            t.equipment.external_council
           ).runTest();
       })
       

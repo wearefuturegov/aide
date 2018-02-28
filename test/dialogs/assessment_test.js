@@ -1,5 +1,6 @@
 var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
+var t = require('../../lib/config')
 
 describe('intro', function() {
   let bot;
@@ -18,19 +19,19 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'hello',
-        'What is your first name?'
+        t.assessment.first_name
       )
       .sendMessageToBot(
         'Ian',
-        'What is your surname?'
+        t.assessment.surname
       )
       .sendMessageToBot(
         'Example',
-        'Phone number we can use to contact you?'
+        t.assessment.phone_number
       )
       .sendMessageToBot(
         '123456',
-        'Thank you. Here\'s the information you\'ve provided',
+        t.assessment.info,
         'First Name: Ian',
         'Surname: Example',
         'Phone Number: 123456'
@@ -43,19 +44,19 @@ describe('intro', function() {
       botTester
         .sendMessageToBot(
           'hello',
-          'What is your first name?'
+          t.assessment.first_name
         )
         .sendMessageToBot(
           'Ian',
-          'What is your surname?'
+          t.assessment.surname
         )
         .sendMessageToBot(
           'Example',
-          'Phone number we can use to contact you?'
+          t.assessment.phone_number
         )
         .sendMessageToBot(
           '123456',
-          'Thank you. Here\'s the information you\'ve provided'
+          t.assessment.info
         )
     })
     
@@ -65,7 +66,7 @@ describe('intro', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'Thank you for answering my questions. I have now passed them to the Social Care Direct team.'
+            t.assessment.thank_you
           ).runTest();
       })
       
@@ -77,7 +78,7 @@ describe('intro', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'What is your first name?'
+            t.assessment.first_name
           ).runTest();
       })
       
