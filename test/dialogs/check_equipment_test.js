@@ -31,7 +31,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?',
+            'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?'
           )
           .runTest();
       })
@@ -44,7 +44,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'Sorry to hear that. I\'m still learning. Could you maybe try rephrasing your question?',
+            'Sorry to hear that. I\'m still learning. Could you maybe try rephrasing your question?'
           )
           .runTest();
       })
@@ -63,7 +63,7 @@ describe('equipment', function() {
         )
         .sendMessageToBot(
           'yes',
-          'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?',
+          'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?'
         )
     });
     
@@ -73,7 +73,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'Here is some information that can help you learn more about paying for care:',
+            'Here is some information that can help you learn more about paying for care:'
           )
           .runTest();
       })
@@ -86,7 +86,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'OK. Is there anything else I can help you with?',
+            'OK. Is there anything else I can help you with?'
           )
           .runTest();
       })
@@ -105,11 +105,11 @@ describe('equipment', function() {
         )
         .sendMessageToBot(
           'yes',
-          'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?',
+          'Great! Glad I could help. Are you interested in finding out more about paying for this equipment?'
         )
         .sendMessageToBot(
           'no',
-          'OK. Is there anything else I can help you with?',
+          'OK. Is there anything else I can help you with?'
         )
     });
     
@@ -119,7 +119,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            '',
+            ''
           )
           .runTest();
       })
@@ -132,14 +132,12 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'no',
-            'No problem, hope you found me useful',
+            'No problem, hope you found me useful'
           )
           .runTest();
       })
       
     })
-    
-    
     
   })
   

@@ -27,7 +27,7 @@ describe('equipment', function() {
     beforeEach(function() {
       botTester.sendMessageToBot(
         'Yes',
-        'Is this for you or someone else?',
+        'Is this for you or someone else?'
       )
     })
     
@@ -54,7 +54,7 @@ describe('equipment', function() {
     beforeEach(function() {
       botTester.sendMessageToBot(
         'Yes',
-        'Is this for you or someone else?',
+        'Is this for you or someone else?'
       )
       .sendMessageToBot(
         'Me',
