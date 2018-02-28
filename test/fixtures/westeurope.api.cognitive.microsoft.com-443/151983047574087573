@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Help%20me%20pay%20for%20care/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1040
+content-type: application/json; charset=utf-8
+apim-request-id: d22a012e-7d52-44f2-ad54-14e976e99af8
+request-id: d22a012e-7d52-44f2-ad54-14e976e99af8
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:07:55 GMT
+connection: close
+
+{
+  "query": "Help me pay for care",
+  "topScoringIntent": {
+    "intent": "payingforcare",
+    "score": 0.786392033
+  },
+  "intents": [
+    {
+      "intent": "payingforcare",
+      "score": 0.786392033
+    },
+    {
+      "intent": "equipment",
+      "score": 0.052985955
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.03907722
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0362859666
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.0137858978
+    },
+    {
+      "intent": "None",
+      "score": 0.0116154458
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.01046996
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.009936213
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.00767793367
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00353811146
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 1.852272E-08
+    }
+  ],
+  "entities": []
+}

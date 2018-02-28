@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Getting%20out%20of%20bed/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1039
+content-type: application/json; charset=utf-8
+apim-request-id: 9fcd383c-799b-4cca-9298-2fd5da71ee33
+request-id: 9fcd383c-799b-4cca-9298-2fd5da71ee33
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:53 GMT
+connection: close
+
+{
+  "query": "Getting out of bed",
+  "topScoringIntent": {
+    "intent": "equipment.bedroom",
+    "score": 0.7726186
+  },
+  "intents": [
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.7726186
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0876094252
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.0363311172
+    },
+    {
+      "intent": "equipment",
+      "score": 0.02966842
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.0149297193
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.0122957462
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.0121345064
+    },
+    {
+      "intent": "None",
+      "score": 0.0108542237
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.00820704
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00319778477
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 1.515957E-06
+    }
+  ],
+  "entities": []
+}

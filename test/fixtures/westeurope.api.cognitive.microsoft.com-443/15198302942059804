@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=mowing%20the%20lawn/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1038
+content-type: application/json; charset=utf-8
+apim-request-id: f74b2c9f-b9d6-4b04-bb07-9a450767cd6f
+request-id: f74b2c9f-b9d6-4b04-bb07-9a450767cd6f
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:53 GMT
+connection: close
+
+{
+  "query": "mowing the lawn",
+  "topScoringIntent": {
+    "intent": "equipment.garden",
+    "score": 0.367408484
+  },
+  "intents": [
+    {
+      "intent": "equipment.garden",
+      "score": 0.367408484
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0404517464
+    },
+    {
+      "intent": "equipment",
+      "score": 0.0320091769
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.0247352347
+    },
+    {
+      "intent": "None",
+      "score": 0.022559952
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.02029763
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.0185342953
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.0182729475
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.0109017473
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00602174
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 3.8362893E-07
+    }
+  ],
+  "entities": []
+}

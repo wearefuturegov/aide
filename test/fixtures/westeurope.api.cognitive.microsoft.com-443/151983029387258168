@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Eating%20my%20dinner/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1037
+content-type: application/json; charset=utf-8
+apim-request-id: 178b401f-92d8-41a8-b2d8-b235df4b42c2
+request-id: 178b401f-92d8-41a8-b2d8-b235df4b42c2
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:53 GMT
+connection: close
+
+{
+  "query": "Eating my dinner",
+  "topScoringIntent": {
+    "intent": "equipment.diningroom",
+    "score": 0.8850373
+  },
+  "intents": [
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.8850373
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.0456898846
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.03555295
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0349703133
+    },
+    {
+      "intent": "equipment",
+      "score": 0.0300905574
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.018903425
+    },
+    {
+      "intent": "None",
+      "score": 0.0143183693
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.0104751829
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.009866544
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.00944384
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 5.322136E-08
+    }
+  ],
+  "entities": []
+}

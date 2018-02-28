@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Getting%20on%20the%20toilet/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1045
+content-type: application/json; charset=utf-8
+apim-request-id: 7520216a-1d6e-4dde-ae32-33820015e1a1
+request-id: 7520216a-1d6e-4dde-ae32-33820015e1a1
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:52 GMT
+connection: close
+
+{
+  "query": "Getting on the toilet",
+  "topScoringIntent": {
+    "intent": "equipment.bathroom",
+    "score": 0.738270044
+  },
+  "intents": [
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.738270044
+    },
+    {
+      "intent": "equipment",
+      "score": 0.107452005
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0468025245
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.03826939
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.02072883
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.0104976445
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.008562504
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.008003124
+    },
+    {
+      "intent": "None",
+      "score": 0.00767616928
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00298818853
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 3.113783E-06
+    }
+  ],
+  "entities": []
+}

@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=getting%20up%20the%20stairs/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1045
+content-type: application/json; charset=utf-8
+apim-request-id: 441450b3-38da-4d73-8cdf-14dcda3c1724
+request-id: 441450b3-38da-4d73-8cdf-14dcda3c1724
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:55 GMT
+connection: close
+
+{
+  "query": "getting up the stairs",
+  "topScoringIntent": {
+    "intent": "equipment.stairs",
+    "score": 0.999999046
+  },
+  "intents": [
+    {
+      "intent": "equipment.stairs",
+      "score": 0.999999046
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.05055233
+    },
+    {
+      "intent": "equipment",
+      "score": 0.0419357829
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.03983129
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.0285867918
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.0187385939
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.0150200259
+    },
+    {
+      "intent": "None",
+      "score": 0.0107058147
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.00954642147
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.007877563
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00296287937
+    }
+  ],
+  "entities": []
+}

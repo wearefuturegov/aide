@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=going%20waterskiing/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1028
+content-type: application/json; charset=utf-8
+apim-request-id: 1f484b89-ec66-4b78-8e37-016260bf9a93
+request-id: 1f484b89-ec66-4b78-8e37-016260bf9a93
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:55 GMT
+connection: close
+
+{
+  "query": "going waterskiing",
+  "topScoringIntent": {
+    "intent": "None",
+    "score": 0.344750822
+  },
+  "intents": [
+    {
+      "intent": "None",
+      "score": 0.344750822
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.199241549
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.144218564
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.0475571081
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.027076738
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.0121955294
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.0117878746
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.009912985
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.004862167
+    },
+    {
+      "intent": "equipment",
+      "score": 0.004115161
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 2.41460984E-05
+    }
+  ],
+  "entities": []
+}

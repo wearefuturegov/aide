@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=reading%20and%20writing/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1037
+content-type: application/json; charset=utf-8
+apim-request-id: 4814ba7f-ad4c-4a0f-bf62-d80a92b6b73f
+request-id: 4814ba7f-ad4c-4a0f-bf62-d80a92b6b73f
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:54 GMT
+connection: close
+
+{
+  "query": "reading and writing",
+  "topScoringIntent": {
+    "intent": "equipment.office",
+    "score": 0.9186731
+  },
+  "intents": [
+    {
+      "intent": "equipment.office",
+      "score": 0.9186731
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.0493902825
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0366207473
+    },
+    {
+      "intent": "equipment",
+      "score": 0.03567182
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.02008068
+    },
+    {
+      "intent": "None",
+      "score": 0.016168952
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.0137623977
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.0135429464
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.00751640042
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.004278393
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 3.446791E-08
+    }
+  ],
+  "entities": []
+}

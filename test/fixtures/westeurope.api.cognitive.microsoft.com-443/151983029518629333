@@ -1,0 +1,70 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=getting%20out%20of%20my%20chair/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1049
+content-type: application/json; charset=utf-8
+apim-request-id: e8383b45-37c5-4b35-8707-59d676b737f9
+request-id: e8383b45-37c5-4b35-8707-59d676b737f9
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Wed, 28 Feb 2018 15:04:55 GMT
+connection: close
+
+{
+  "query": "getting out of my chair",
+  "topScoringIntent": {
+    "intent": "equipment.lounge",
+    "score": 0.235679522
+  },
+  "intents": [
+    {
+      "intent": "equipment.lounge",
+      "score": 0.235679522
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.0838976651
+    },
+    {
+      "intent": "equipment",
+      "score": 0.05838561
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.0338987857
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.01782872
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.0174295083
+    },
+    {
+      "intent": "None",
+      "score": 0.0140965311
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.0130608231
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.0071366583
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00377423549
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 8.35284141E-07
+    }
+  ],
+  "entities": []
+}
