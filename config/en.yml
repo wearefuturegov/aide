@@ -1,10 +1,30 @@
 end_conversation: No problem, have a great day
 rephrase: Sorry to hear that. I'm still learning. Could you maybe try rephrasing your request?
 
-intro:
-  line_1: Hello, I am your Newcastle City Council Social Care Direct virtual assistant
-  line_2: I can currently help with equipment requests and how to pay for care
-  line_3: How can I help you today?
+care_intro:
+  line_1: Hello 👋
+  line_2: I'm the virtual advisor for Newcastle City Council's adult care and services.
+  line_3: At the moment, I can help you with information and advice about your equipment needs and options to pay for equipment.
+  for_you: But before we move on, are you enquiring for you or someone else?
+  you_live_in_newcastle: Do you live in Newcastle?
+  someone_else_live_in_newcastle: Does the person live in Newcastle?
+  external_council: I am only able to advise residents of Newcastle because all my advice is local to the area. You can find your local council at https://www.gov.uk/find-local-council
+  check_council: Well, you can always check. I'll give you a link so that you can find your council. https://www.gov.uk/find-local-council
+  help_intro: |
+    Great!
+     
+    I can help you with:
+      
+      • information about equipment and where to start
+      • finding equipment
+      • financial support and resources to pay for equipment
+      • council support advice
+
+    What do you need help with?
+    (For example, issues with getting in and out of bed...)
+  
+help_chooser:
+  options: Sorry, I quite work out what you want. Please choose from the following options.
   confirm:
     equipment: OK, I can see you need help with an equipment request, is that right?
     paying: OK, I can see you need help with paying for care, is that right?
@@ -14,7 +34,6 @@ equipment:
   you_live_in_newcastle: Do you live in Newcastle?
   someone_else_live_in_newcastle: Does the person live in Newcastle?
   kind_of_help: What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?
-  external_council: I am only able to advise residents of Newcastle because all my advice is local to the area. You can find your local council at https://www.gov.uk/find-local-council
   what_you_were_looking_for: Was that what you were looking for?
   move_to_payment: Great! Glad I could help. Are you interested in finding out more about paying for this equipment?
   anything_else: OK. Is there anything else I can help you with?
