@@ -1,11 +1,11 @@
-end_conversation: No problem, have a great day
+end_conversation: No problem, have a great day!
 rephrase: Sorry to hear that. I'm still learning. Could you maybe try rephrasing your request?
 
 care_intro:
   line_1: Hello 👋
   line_2: I'm the virtual advisor for Newcastle City Council's adult care and services.
-  line_3: At the moment, I can help you with information and advice about your equipment needs and options to pay for equipment.
-  for_you: But before we move on, are you enquiring for you or someone else?
+  line_3: At the moment, I can help you with information and advice about your equipment needs and options on how to get equipment.
+  for_you: But before we move on, are you enquiring for yourself or someone else?
   you_live_in_newcastle: Do you live in Newcastle?
   someone_else_live_in_newcastle: Does the person live in Newcastle?
   external_council: I am only able to advise residents of Newcastle because all my advice is local to the area. You can find your local council at https://www.gov.uk/find-local-council
@@ -15,13 +15,13 @@ care_intro:
      
     I can help you with:
       
-      • information about equipment and where to start
-      • finding equipment
-      • financial support and resources to pay for equipment
+      • general advice about equipment
+      • finding specific types of equipment
+      • getting and paying for equipment
       • council support advice
 
-    What do you need help with?
-    (For example, issues with getting in and out of bed...)
+    What would you like help with?
+    (For example, trouble getting in and out of bed, shower equipment...)
   
 help_chooser:
   options: Sorry, I quite work out what you want. Please choose from the following options.
@@ -35,38 +35,38 @@ equipment:
   someone_else_live_in_newcastle: Does the person live in Newcastle?
   kind_of_help: What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?
   what_you_were_looking_for: Was that what you were looking for?
-  move_to_payment: Great! Glad I could help. Are you interested in finding out more about paying for this equipment?
+  move_to_payment: Great! Glad I could help. Are you interested in finding about how you can get this equipment?
   anything_else: OK. Is there anything else I can help you with?
   bathroom:
-    message: "OK, I've found some information on equipment that can help you in the bathroom on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the bathroom:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bathroom"
   bedroom:
-    message: "OK, I've found some information on equipment that can help you in the bedroom on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the bedroom:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bedroom"
   diningroom:
-    message: "OK, I've found some information on equipment that can help you in the dining room on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the dining room:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/DiningRoom"
   garden:
-    message: "OK, I've found some information on equipment that can help you in the garden on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the garden:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Garden"
   office:
-    message: "OK, I've found some information on equipment that can help you in the office on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the office:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Office"
   kitchen:
-    message: "OK, I've found some information on equipment that can help you in the kitchen on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the kitchen:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Kitchen"
   lounge:
-    message: "OK, I've found some information on equipment that can help you in the lounge on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you in the lounge:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Lounge"
   stairs:
-    message: "OK, I've found some information on equipment that can help you on the stairs on the My Equipment Newcastle website"
+    message: "OK, I've found some information on equipment that can help you on the stairs:"
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Stairs"
 
 payingforcare:
-  info_1: "Here is some information that can help you learn more about paying for care:"
-  info_2: https://www.informationnow.org.uk/article/paying-for-care/
-  info_3: You can also get a financial assessment completed by the council to check if you are eligible for financial support.
-  start_assessment: Would you like to start an assessment?
+  info_1: Newcastle City Council's Community Health and Social Care Direct team offer a free needs assessment.
+  info_2: It will help assess what your needs are and see if you can receive some help from the council. The assessment also gives you the opportunity to discuss your needs with a social worker or an occupational therapist.
+  info_3: "You can request an assessment using this online form:"
+  info_4: https://www.newcastle.gov.uk/social-care-and-health/care-and-support-adults/getting-support-council/care-and-support-assessment
 
 assessment:
   intro: Great! We need to collect a few pieces of information so that we can pass it onto the Social Care Direct team to followup on your request for assessing payment support available to you.
