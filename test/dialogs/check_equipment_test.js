@@ -74,7 +74,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            'Here is some information that can help you learn more about paying for care:'
+            t.payingforcare.info_1
           )
           .runTest();
       })

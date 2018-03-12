@@ -1,5 +1,6 @@
 var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
+var config = require('../../lib/config')
 
 describe('equipment type', function() {
   let bot;
@@ -20,7 +21,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'Getting on the toilet',
-            'OK, I\'ve found some information on equipment that can help you in the bathroom on the My Equipment Newcastle website'
+            config.equipment.bathroom.message
           )
           .runTest();
       })
@@ -29,7 +30,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'Getting out of bed',
-            'OK, I\'ve found some information on equipment that can help you in the bedroom on the My Equipment Newcastle website'
+            config.equipment.bedroom.message
           )
           .runTest();
       })
@@ -38,7 +39,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'Eating my dinner',
-            'OK, I\'ve found some information on equipment that can help you in the dining room on the My Equipment Newcastle website'
+            config.equipment.diningroom.message
           )
           .runTest();
       })
@@ -47,7 +48,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'mowing the lawn',
-            'OK, I\'ve found some information on equipment that can help you in the garden on the My Equipment Newcastle website'
+            config.equipment.garden.message
           )
           .runTest();
       })
@@ -56,7 +57,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'reading and writing',
-            'OK, I\'ve found some information on equipment that can help you in the office on the My Equipment Newcastle website'
+            config.equipment.office.message
           )
           .runTest();
       })
@@ -65,7 +66,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'cooking my dinner',
-            'OK, I\'ve found some information on equipment that can help you in the kitchen on the My Equipment Newcastle website'
+            config.equipment.kitchen.message
           )
           .runTest();
       })
@@ -74,7 +75,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'getting out of my chair',
-            'OK, I\'ve found some information on equipment that can help you in the lounge on the My Equipment Newcastle website'
+            config.equipment.lounge.message
           )
           .runTest();
       })
@@ -83,7 +84,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'getting up the stairs',
-            'OK, I\'ve found some information on equipment that can help you on the stairs on the My Equipment Newcastle website'
+            config.equipment.stairs.message
           )
           .runTest();
       })
