@@ -19,9 +19,7 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'hello',
-        t.payingforcare.info_1,
-        t.payingforcare.info_2,
-        t.payingforcare.info_3
+        t.payingforcare.info_1
       )
       .runTest();
   })
