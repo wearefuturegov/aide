@@ -13,7 +13,8 @@ describe('intro', function() {
       'confirm': dialogs.confirm,
       'equipmentType': dialogs.equipmentType,
       'payingforcare': dialogs.payingForCare,
-      'confirmEquipment': dialogs.confirmEquipment
+      'confirmEquipment': dialogs.confirmEquipment,
+      'checkEquipment': dialogs.checkEquipment
     })
     botTester = new helper.botTester.BotTester(bot)
   });
@@ -52,6 +53,10 @@ describe('intro', function() {
           'Getting on the toilet',
           t.equipment.confirm.replace('%s', 'in the bathroom')
         )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the bathroom')
+        )
         .runTest();
     })
   
@@ -60,6 +65,10 @@ describe('intro', function() {
         .sendMessageToBot(
           'Getting out of bed',
           t.equipment.confirm.replace('%s', 'in the bedroom')
+        )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the bedroom')
         )
         .runTest();
     })
@@ -70,6 +79,10 @@ describe('intro', function() {
           'Eating my dinner',
           t.equipment.confirm.replace('%s', 'in the dining room')
         )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the dining room')
+        )
         .runTest();
     })
   
@@ -78,6 +91,10 @@ describe('intro', function() {
         .sendMessageToBot(
           'mowing the lawn',
           t.equipment.confirm.replace('%s', 'in the garden')
+        )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the garden')
         )
         .runTest();
     })
@@ -88,6 +105,10 @@ describe('intro', function() {
           'reading and writing',
           t.equipment.confirm.replace('%s', 'in the office')
         )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the office')
+        )
         .runTest();
     })
   
@@ -96,6 +117,10 @@ describe('intro', function() {
         .sendMessageToBot(
           'cooking my dinner',
           t.equipment.confirm.replace('%s', 'in the kitchen')
+        )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the kitchen')
         )
         .runTest();
     })
@@ -106,6 +131,10 @@ describe('intro', function() {
           'getting out of my chair',
           t.equipment.confirm.replace('%s', 'in the lounge')
         )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'in the lounge')
+        )
         .runTest();
     })
   
@@ -114,6 +143,10 @@ describe('intro', function() {
         .sendMessageToBot(
           'getting up the stairs',
           t.equipment.confirm.replace('%s', 'on the stairs')
+        )
+        .sendMessageToBot(
+          'yes',
+          t.equipment.message.replace('%s', 'on the stairs')
         )
         .runTest();
     })
