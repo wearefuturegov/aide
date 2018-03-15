@@ -2,7 +2,7 @@ var helper = require('../test_helper');
 var dialogs = require('../../lib/dialogs')
 var t = require('../../lib/config')
 
-describe('intro', function() {
+describe('help chooser', function() {
   let bot;
   let botTester;
   this.timeout(15000);
@@ -157,7 +157,7 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'Whatever',
-        'Sorry, I did not understand \'Whatever\'. Please try rephrasing your request'
+        t.did_not_understand.replace('%s', 'Whatever')
       )
       .runTest();
   });
@@ -166,7 +166,7 @@ describe('intro', function() {
     return botTester
       .sendMessageToBot(
         'Whatever',
-        'Sorry, I did not understand \'Whatever\'. Please try rephrasing your request'
+        t.did_not_understand.replace('%s', 'Whatever')
       )
       .sendMessageToBot(
         'Whatever',

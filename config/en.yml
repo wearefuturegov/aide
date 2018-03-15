@@ -1,5 +1,6 @@
 end_conversation: No problem, have a great day!
 rephrase: Sorry to hear that. I'm still learning. Could you maybe try rephrasing your request?
+did_not_understand: Sorry, I did not understand '%s'. Could you maybe rephrase?
 
 care_intro:
   line_1: Hello 👋

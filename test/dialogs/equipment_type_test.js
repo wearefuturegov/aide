@@ -100,7 +100,7 @@ describe('equipment type', function() {
         return botTester
           .sendMessageToBot(
             'going waterskiing',
-            'Sorry, I did not understand \'going waterskiing\'. Could you maybe rephrase?'
+            config.did_not_understand.replace('%s', 'going waterskiing')
           )
           .runTest();
       })
