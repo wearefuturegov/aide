@@ -4,66 +4,66 @@ host: westeurope.api.cognitive.microsoft.com
 HTTP/1.1 200 OK
 cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
 pragma: no-cache
-content-length: 1045
+content-length: 1051
 content-type: application/json; charset=utf-8
-apim-request-id: 7520216a-1d6e-4dde-ae32-33820015e1a1
-request-id: 7520216a-1d6e-4dde-ae32-33820015e1a1
+apim-request-id: e0e26b08-3366-46da-9f59-52b41d3873b9
+request-id: e0e26b08-3366-46da-9f59-52b41d3873b9
 x-powered-by: ASP.NET
 strict-transport-security: max-age=31536000; includeSubDomains; preload
 x-content-type-options: nosniff
-date: Wed, 28 Feb 2018 15:04:52 GMT
+date: Thu, 15 Mar 2018 18:00:39 GMT
 connection: close
 
 {
   "query": "Getting on the toilet",
   "topScoringIntent": {
     "intent": "equipment.bathroom",
-    "score": 0.738270044
+    "score": 0.913699448
   },
   "intents": [
     {
       "intent": "equipment.bathroom",
-      "score": 0.738270044
+      "score": 0.913699448
     },
     {
       "intent": "equipment",
-      "score": 0.107452005
+      "score": 0.070807986
     },
     {
       "intent": "equipment.lounge",
-      "score": 0.0468025245
+      "score": 0.03626011
     },
     {
       "intent": "equipment.garden",
-      "score": 0.03826939
-    },
-    {
-      "intent": "equipment.bedroom",
-      "score": 0.02072883
-    },
-    {
-      "intent": "payingforcare",
-      "score": 0.0104976445
-    },
-    {
-      "intent": "equipment.kitchen",
-      "score": 0.008562504
-    },
-    {
-      "intent": "equipment.office",
-      "score": 0.008003124
-    },
-    {
-      "intent": "None",
-      "score": 0.00767616928
+      "score": 0.01640803
     },
     {
       "intent": "equipment.diningroom",
-      "score": 0.00298818853
+      "score": 0.0048888023
+    },
+    {
+      "intent": "None",
+      "score": 0.00400478253
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.00339359837
     },
     {
       "intent": "equipment.stairs",
-      "score": 3.113783E-06
+      "score": 0.00260139885
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.00243367581
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.00162389246
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.00146121474
     }
   ],
   "entities": []

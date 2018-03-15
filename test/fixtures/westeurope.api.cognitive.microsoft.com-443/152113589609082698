@@ -1,4 +1,4 @@
-GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Whatever
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Whatever/
 host: westeurope.api.cognitive.microsoft.com
 
 HTTP/1.1 200 OK
