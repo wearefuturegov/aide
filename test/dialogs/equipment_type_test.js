@@ -16,6 +16,13 @@ describe('equipment type', function() {
   });
   
   context('gives me links for', function() {
+    
+      beforeEach(function() {
+        botTester.sendMessageToBot(
+          'Hello',
+          config.equipment.kind_of_help
+        )
+      })
       
       it('help in the bathroom', function() {
         return botTester

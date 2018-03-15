@@ -11,7 +11,7 @@ describe('intro', function() {
     bot = helper.testBot(helper.connector, {
       '/': dialogs.help_chooser,
       'confirm': dialogs.confirm,
-      'equipment': dialogs.equipment,
+      'equipmentType': dialogs.equipmentType,
       'payingforcare': dialogs.payingForCare
     })
     botTester = new helper.botTester.BotTester(bot)
@@ -25,7 +25,7 @@ describe('intro', function() {
       )
       .sendMessageToBot(
         'yes',
-        t.equipment.for_you
+        t.equipment.kind_of_help
       )
       .runTest();
   });
