@@ -37,29 +37,31 @@ equipment:
   what_you_were_looking_for: Was that what you were looking for?
   move_to_payment: Great! Glad I could help. Are you interested in finding about how you can get this equipment?
   anything_else: OK. Is there anything else I can help you with?
+  confirm: It looks like you're looking for help with equipment %s, is that right?
+  message: OK, I've found some information on equipment that can help you %s:"
   bathroom:
-    message: "OK, I've found some information on equipment that can help you in the bathroom:"
+    name: in the bathroom
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bathroom"
   bedroom:
-    message: "OK, I've found some information on equipment that can help you in the bedroom:"
+    name: in the bedroom
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bedroom"
   diningroom:
-    message: "OK, I've found some information on equipment that can help you in the dining room:"
+    name: in the dining room
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/DiningRoom"
   garden:
-    message: "OK, I've found some information on equipment that can help you in the garden:"
+    name: in the garden
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Garden"
   office:
-    message: "OK, I've found some information on equipment that can help you in the office:"
+    name: in the office
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Office"
   kitchen:
-    message: "OK, I've found some information on equipment that can help you in the kitchen:"
+    name: in the kitchen
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Kitchen"
   lounge:
-    message: "OK, I've found some information on equipment that can help you in the lounge:"
+    name: in the lounge
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Lounge"
   stairs:
-    message: "OK, I've found some information on equipment that can help you on the stairs:"
+    name: on the stairs
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Stairs"
 
 payingforcare:
