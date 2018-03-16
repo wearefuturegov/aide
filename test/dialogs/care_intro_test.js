@@ -10,7 +10,7 @@ describe('care_intro', function() {
   beforeEach(function() {
     bot = helper.testBot(helper.connector, {
       '/': dialogs.care_intro,
-      'helpChooser': dialogs.help_chooser
+      'helpChooser': dialogs.helpChooser
     })
     botTester = new helper.botTester.BotTester(bot)
   });

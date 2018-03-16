@@ -11,7 +11,7 @@ describe('equipment', function() {
     bot = helper.testBot(helper.connector, {
       '/': dialogs.checkEquipment,
       'equipmentType': dialogs.equipmentType,
-      'payingforcare': dialogs.payingForCare
+      'gettingEquipment': dialogs.gettingEquipment
     })
     botTester = new helper.botTester.BotTester(bot)
   });
@@ -32,7 +32,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            t.equipment.move_to_payment
+            t.equipment.move_to_getting
           )
           .runTest();
       })
@@ -64,7 +64,7 @@ describe('equipment', function() {
         )
         .sendMessageToBot(
           'yes',
-          t.equipment.move_to_payment
+          t.equipment.move_to_getting
         )
     });
     
@@ -74,7 +74,7 @@ describe('equipment', function() {
         return botTester
           .sendMessageToBot(
             'yes',
-            t.payingforcare.info_1
+            t.getting_equipment.info_1
           )
           .runTest();
       })
@@ -106,7 +106,7 @@ describe('equipment', function() {
         )
         .sendMessageToBot(
           'yes',
-          t.equipment.move_to_payment
+          t.equipment.move_to_getting
         )
         .sendMessageToBot(
           'no',

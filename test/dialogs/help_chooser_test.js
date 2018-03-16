@@ -9,10 +9,10 @@ describe('help chooser', function() {
   
   beforeEach(function() {
     bot = helper.testBot(helper.connector, {
-      '/': dialogs.help_chooser,
+      '/': dialogs.helpChooser,
       'confirm': dialogs.confirm,
       'equipmentType': dialogs.equipmentType,
-      'payingforcare': dialogs.payingForCare,
+      'gettingEquipment': dialogs.gettingEquipment,
       'confirmEquipment': dialogs.confirmEquipment,
       'checkEquipment': dialogs.checkEquipment
     })
@@ -40,7 +40,7 @@ describe('help chooser', function() {
       )
       .sendMessageToBot(
         'yes',
-        t.payingforcare.info_1
+        t.getting_equipment.info_1
       )
       .runTest();
   });
