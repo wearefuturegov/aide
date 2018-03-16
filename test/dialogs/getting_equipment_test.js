@@ -14,44 +14,60 @@ describe('getting equipment', function() {
       'anythingElse': dialogs.anythingElse,
     })
     botTester = new helper.botTester.BotTester(bot)
+    
+    botTester.sendMessageToBot(
+      'hello',
+      t.getting_equipment.info
+    )
   });
-  
-  it('gives me some information', function() {
+    
+  it('gives me some info about self support', function() {
     return botTester
       .sendMessageToBot(
-        'hello',
-        t.getting_equipment.info
+        t.getting_equipment.choices[0],
+        t.getting_equipment.access_myself
       )
       .runTest();
   })
   
-  describe('self or council', function() {
+  it('gives me some info about council support', function() {
+    return botTester
+      .sendMessageToBot(
+        t.getting_equipment.choices[1],
+        t.getting_equipment.council_support
+      )
+      .runTest();
+  })
+  
+  describe('more about assessment', function() {
     
     beforeEach(function() {
-      botTester.sendMessageToBot(
-        'hello',
-        t.getting_equipment.info
-      )
+      botTester
+        .sendMessageToBot(
+          t.getting_equipment.choices[1],
+          t.getting_equipment.council_support,
+          t.getting_equipment.assessment
+        )
     });
     
-    it('gives me some info about self support', function() {
+    it('gives me assessment info', function() {
       return botTester
         .sendMessageToBot(
-          t.getting_equipment.choices[0],
-          t.getting_equipment.access_myself
+          'yes',
+          t.assessment
         )
         .runTest();
     })
     
-    it('gives me some info about council support', function() {
+    it('asks me if there is anything else', function() {
       return botTester
         .sendMessageToBot(
-          t.getting_equipment.choices[1],
-          t.getting_equipment.council_support
+          'no',
+          t.anything_else
         )
         .runTest();
     })
     
   })
-  
+      
 })

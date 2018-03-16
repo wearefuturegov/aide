@@ -32,7 +32,7 @@ describe('help chooser', function() {
       .runTest();
   });
   
-  it('Points me to paying for care', function() {
+  it('Points me to getting equipment', function() {
     return botTester
       .sendMessageToBot(
         'Help me pay for care',

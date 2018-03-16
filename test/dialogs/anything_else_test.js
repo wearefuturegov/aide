@@ -24,7 +24,7 @@ describe('anything else', function() {
     return botTester
       .sendMessageToBot(
         'yes',
-        t.help_intro
+        t.care_intro.help_intro
       )
       .runTest();
   })
