@@ -14,20 +14,21 @@ describe('help chooser', function() {
       'equipmentType': dialogs.equipmentType,
       'gettingEquipment': dialogs.gettingEquipment,
       'confirmEquipment': dialogs.confirmEquipment,
-      'checkEquipment': dialogs.checkEquipment
+      'checkEquipment': dialogs.checkEquipment,
+      'assessment': dialogs.assessment
     })
     botTester = new helper.botTester.BotTester(bot)
   });
   
-  it('Points me to equipment', function() {
+  it('Points me to an assessment', function() {
     return botTester
       .sendMessageToBot(
-        'Equipment',
-        t.help_chooser.confirm.equipment
+        'Assessment',
+        t.help_chooser.confirm.assessment
       )
       .sendMessageToBot(
         'yes',
-        t.equipment.kind_of_help
+        t.assessment
       )
       .runTest();
   });
@@ -35,8 +36,8 @@ describe('help chooser', function() {
   it('Points me to getting equipment', function() {
     return botTester
       .sendMessageToBot(
-        'Help me pay for care',
-        t.help_chooser.confirm.paying
+        'I need a wheelchair',
+        t.help_chooser.confirm.getting_equipment
       )
       .sendMessageToBot(
         'yes',

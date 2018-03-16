@@ -1,0 +1,74 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=Assessment/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1108
+content-type: application/json; charset=utf-8
+apim-request-id: 987747a5-171e-4e67-aa46-8b9d61bd0133
+request-id: 987747a5-171e-4e67-aa46-8b9d61bd0133
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Fri, 16 Mar 2018 12:33:33 GMT
+connection: close
+
+{
+  "query": "Assessment",
+  "topScoringIntent": {
+    "intent": "assessment",
+    "score": 0.9999995
+  },
+  "intents": [
+    {
+      "intent": "assessment",
+      "score": 0.9999995
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.05033221
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0374717563
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.029792821
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.0243143253
+    },
+    {
+      "intent": "None",
+      "score": 0.0175851583
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.0145227006
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.0119189182
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.008698372
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 0.00247270917
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.0007912299
+    },
+    {
+      "intent": "gettingEquipment",
+      "score": 0.000400700752
+    }
+  ],
+  "entities": []
+}

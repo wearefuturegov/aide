@@ -40,7 +40,8 @@ help_chooser:
   options: Sorry, I quite work out what you want. Please choose from the following options.
   confirm:
     equipment: OK, I can see you need help with an equipment request, is that right?
-    getting_equipment: OK, I can see you need help with paying for care, is that right?
+    getting_equipment: OK, I can see you want to know more about how to get equipment, is that right?
+    assessment: OK, I can see you want to know about how to get assessed, is that right?
 
 equipment:
   for_you: Is this for you or someone else?

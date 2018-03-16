@@ -1,0 +1,74 @@
+GET REGEXP /\/luis\/v2\.0\/apps\/*.+?subscription\-key=*.+&verbose=true&timezoneOffset=0&q=I%20need%20a%20wheelchair/
+host: westeurope.api.cognitive.microsoft.com
+
+HTTP/1.1 200 OK
+cache-control: no-store, proxy-revalidate, no-cache, max-age=0, private
+pragma: no-cache
+content-length: 1122
+content-type: application/json; charset=utf-8
+apim-request-id: 37f46f3e-65d3-4c96-84d6-a1130d99efb3
+request-id: 37f46f3e-65d3-4c96-84d6-a1130d99efb3
+x-powered-by: ASP.NET
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+date: Fri, 16 Mar 2018 12:33:33 GMT
+connection: close
+
+{
+  "query": "I need a wheelchair",
+  "topScoringIntent": {
+    "intent": "gettingEquipment",
+    "score": 0.9710971
+  },
+  "intents": [
+    {
+      "intent": "gettingEquipment",
+      "score": 0.9710971
+    },
+    {
+      "intent": "equipment.lounge",
+      "score": 0.0437429
+    },
+    {
+      "intent": "None",
+      "score": 0.0224145185
+    },
+    {
+      "intent": "payingforcare",
+      "score": 0.02201552
+    },
+    {
+      "intent": "equipment.bathroom",
+      "score": 0.0147007648
+    },
+    {
+      "intent": "equipment.kitchen",
+      "score": 0.0128296046
+    },
+    {
+      "intent": "equipment.office",
+      "score": 0.0111009208
+    },
+    {
+      "intent": "equipment.garden",
+      "score": 0.009426159
+    },
+    {
+      "intent": "equipment.diningroom",
+      "score": 0.00395250646
+    },
+    {
+      "intent": "equipment.bedroom",
+      "score": 0.00100000179
+    },
+    {
+      "intent": "equipment.stairs",
+      "score": 0.0008854014
+    },
+    {
+      "intent": "assessment",
+      "score": 2.49507157E-05
+    }
+  ],
+  "entities": []
+}
