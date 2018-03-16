@@ -2,7 +2,8 @@ end_conversation: No problem, have a great day!
 rephrase: Sorry to hear that. I'm still learning. Could you maybe try rephrasing your request?
 did_not_understand: Sorry, I did not understand '%s'. Could you maybe rephrase?
 anything_else: Is there anything else I can help you with?
-
+what_you_were_looking_for: Was that what you were looking for?
+great: Great! Glad I could help
 
 assessment: |
   Newcastle City Council's Community Health and Social Care Direct team can arrange a free assessment for equipment, aids and adaptations.
