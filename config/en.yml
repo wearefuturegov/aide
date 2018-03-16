@@ -40,7 +40,7 @@ equipment:
   move_to_getting: Great! Glad I could help. Are you interested in finding about how you can get this equipment?
   anything_else: OK. Is there anything else I can help you with?
   confirm: It looks like you're looking for help with equipment %s, is that right?
-  message: OK, I've found some information on equipment that can help you %s:"
+  message: "OK, I've found some information on equipment that can help you %s:"
   bathroom:
     name: in the bathroom
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Bathroom"
