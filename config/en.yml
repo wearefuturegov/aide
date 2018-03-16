@@ -1,6 +1,7 @@
 end_conversation: No problem, have a great day!
 rephrase: Sorry to hear that. I'm still learning. Could you maybe try rephrasing your request?
 did_not_understand: Sorry, I did not understand '%s'. Could you maybe rephrase?
+anything_else: Is there anything else I can help you with?
 
 care_intro:
   line_1: Hello 👋
@@ -28,7 +29,7 @@ help_chooser:
   options: Sorry, I quite work out what you want. Please choose from the following options.
   confirm:
     equipment: OK, I can see you need help with an equipment request, is that right?
-    paying: OK, I can see you need help with paying for care, is that right?
+    getting_equipment: OK, I can see you need help with paying for care, is that right?
 
 equipment:
   for_you: Is this for you or someone else?
@@ -36,7 +37,7 @@ equipment:
   someone_else_live_in_newcastle: Does the person live in Newcastle?
   kind_of_help: What kind of help do you need? For example, do you need help with bathing or eating, or do you have an audio or visual impairment?
   what_you_were_looking_for: Was that what you were looking for?
-  move_to_payment: Great! Glad I could help. Are you interested in finding about how you can get this equipment?
+  move_to_getting: Great! Glad I could help. Are you interested in finding about how you can get this equipment?
   anything_else: OK. Is there anything else I can help you with?
   confirm: It looks like you're looking for help with equipment %s, is that right?
   message: OK, I've found some information on equipment that can help you %s:"
@@ -65,11 +66,22 @@ equipment:
     name: on the stairs
     link: "https://www.myequipmentnewcastle.org.uk/catalogue/Stairs"
 
-payingforcare:
-  info_1: Newcastle City Council's Community Health and Social Care Direct team offer a free needs assessment.
-  info_2: It will help assess what your needs are and see if you can receive some help from the council. The assessment also gives you the opportunity to discuss your needs with a social worker or an occupational therapist.
-  info_3: "You can request an assessment using this online form:"
-  info_4: https://www.newcastle.gov.uk/social-care-and-health/care-and-support-adults/getting-support-council/care-and-support-assessment
+getting_equipment:
+  info: |
+    Getting equipment yourself is often quicker than waiting for council support.  There are a lot of resources out there that can help with access to equipment, like equipment loan services, grants and advice.
+    Did you know that a lot of shops like Amazon, Argos and Boots sell equipment too! It’s easy to ask in the store or search online, but it’s always good to speak with someone for advice on what to buy.
+    Newcastle City Council can often help with payment and access to certain equipment.
+  self_or_council: What would you like to learn more about?
+  choices:
+    - Access myself
+    - Council support
+  access_myself: |
+    Here are some useful resources that may help you with getting and paying equipment yourself:
+      * https://www.moneyadviceservice.org.uk/en/articles/shopping-around-for-disability-aids-and-equipment
+      * http://www.disabilitynorth.org.uk/
+  council_support: |
+    The council offers support with equipment ...
+  assessment: Would you like to find out more about applying for an assessment?
 
 assessment:
   intro: Great! We need to collect a few pieces of information so that we can pass it onto the Social Care Direct team to followup on your request for assessing payment support available to you.
