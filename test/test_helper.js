@@ -3,8 +3,9 @@ require('dotenv').config()
 var botBuilder = require('botbuilder');
 var botTester = require('bot-tester');
 var replay  = require('replay');
+var path = require('path');
 
-replay.fixtures = __dirname + '/fixtures';
+replay.fixtures = path.resolve('test', 'fixtures');
 
 var connector = new botTester.TestConnector({
   defaultAddress: botBuilder.IAddress

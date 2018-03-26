@@ -1,6 +1,8 @@
-var helper = require('../test_helper');
-var dialogs = require('../../lib/dialogs')
-var t = require('../../lib/config')
+var path = require('path');
+
+var helper = require(path.resolve('test', 'test_helper'));
+var dialogs = require(path.resolve('lib', 'dialogs'))
+var t = require(path.resolve('lib', 'config'))
 
 describe('equipment', function() {
   let bot;
