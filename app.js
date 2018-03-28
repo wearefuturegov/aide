@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'pug');
 
-var bot = require(path.resolve('lib', 'bot'););
+var bot = require(path.resolve('lib', 'bot'));
 var builder = require('botbuilder');
 
 var connector = new builder.ChatConnector({
